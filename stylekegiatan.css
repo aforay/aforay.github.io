@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #F5ECD5;
+}
+
+.container {
+    background-color: #626F47;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+header {
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: #626F47;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #F0BB78;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.kotak1, .kotak2, .kotak3, .kotak4, .kotak5, .kotak6 {
+    background: #A4B465;
+    height: 300px;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hero {
+    margin: 150px 50px 50px 50px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+
+.header {
+    padding: 20px;
+    font-size: 30px;
+    color: #F0BB78;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.kotak1 img, .kotak2 img, .kotak3 img, .kotak4 img, .kotak5 img, .kotak6 img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.kotak1 p, .kotak2 p, .kotak3 p, .kotak4 p, .kotak5 p, .kotak6 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+
+.kotak1 p span, .kotak2 p span, .kotak3 p span, .kotak4 p span, .kotak5 p span, .kotak6 p span {
+    color: #F0BB78;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer {
+    padding: 15px;
+    background-color: #626F47;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
